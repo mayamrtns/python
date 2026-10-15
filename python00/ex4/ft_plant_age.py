@@ -1,2 +1,2 @@
-def	ft_plant_age(cycles):
-	return cycles * 60
+def ft_plant_age(cycles):
+    return cycles * 60
