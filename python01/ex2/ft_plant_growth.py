@@ -10,6 +10,11 @@ class Plant:
     def show(self) -> None:
         print(f"{self.name}: {round(self.height, 1)}cm, {self.days_old} days old")
 
+    @classmethod
+    def plantadamaya(cls) -> "Plant":
+        return Plant("Planta da Maya", 10, 110)
+
+
 if __name__ == "__main__":
     print("=== Garden Plant Growth ===")
     rose = Plant("Rose", 25.0, 30)
@@ -20,6 +25,8 @@ if __name__ == "__main__":
         rose.grow(0.8)
         rose.age(1)
         rose.show()
-
     growth = round(30.6 - 25.0, 1)
     print(f"Growth this week: {growth}cm")
+
+    plant = Plant("Planta da Maya", 10, 110)
+    plant = Plant.plantadamaya();
